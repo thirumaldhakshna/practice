@@ -1,0 +1,331 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.child{
+    /* width: 320px;
+    height: 400px; */
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+}
+.front{
+    transform: perspective(500px) rotate(0deg);
+}
+.card:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.back{
+    transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.head{
+    height: 25%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dsu-logo{
+    width: 20%;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    border: 2px solid gold;
+    border-radius: 50%;
+    color: red;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 80px;
+}
+.dsu-name h4{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: yellow;
+    margin-block: 0px;
+    /* margin-top: 15px; */
+}
+.dsu-name .address{
+    margin-block: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    display: inline;
+    color: white;
+}
+.dsu-name .school{
+    margin-block: 0px;
+    margin-top: 3px;
+    margin-left: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    display: block;
+    color: white;
+}
+.red-empty{
+    height: 3%;
+    background-color: red;
+}
+.profile-sec{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.profile{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 251, 253);
+}
+.bi-person-fill{
+    font-size: 100px;
+    color: gray;
+}
+.profile img{
+    width: 100px;
+}
+.id{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: -.5px;
+    color: red;
+}
+.type{
+    position: absolute;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: red;
+}
+.description{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description span {
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    padding: 2px;
+}
+.description .name{
+    color: red;
+}
+.description .degree{
+    color: blue;
+}
+.description .year{
+    color:maroon;
+}
+.description .reg{
+    color: blue;
+    font-size: 15px;
+}
+.barcode{
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barcode img{
+    width: 190px;
+    height: 50px;
+}
+.foot-empty{
+    height: 4.2%;
+    background-color: red;
+    border-radius: 0px 0px 10px 10px;
+}
+.plain{
+    background-color: darkorange;
+    height: 20%;
+    border-bottom: 2px solid white;
+}
+.back .description {
+    height: 60%;
+    padding-block: 5px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 5px;
+}
+.round{
+    width: 25px;
+    height: 25px;
+    border: 1px solid red;
+    font-size: 18px;
+    color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+.admin{
+    height: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: red;
+}
+.point{
+    background-color: darkorange;
+    height: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.point .logo{
+    border-radius: 0px 0px;
+    border: 0px;
+}
+.point .logo span{
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+.point .text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    color: yellow;
+    font-weight: 500;
+}
+.foot{
+    height: 23.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot .dsu-logo{
+    width: 20%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fott .logo{
+    border: 2px solid gold;
+    border-radius: 50%;
+    color: red;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot .logo img{
+    width: 80px;
+}
+.foot .dsu-logo, .foot .dsu-name{display: flex; justify-content: center; align-items: center;}
+.foot .dsu-name{flex-direction: column;}
+.foot .dsu-name h4{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: red;
+    margin-block: 0px;
+}
+.foot .dsu-name .address{
+    margin-block: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    display: inline;
+    color: orange;
+}
+.foot .dsu-name .school{
+    margin-block: 0px;
+    margin-top: 3px;
+    margin-left: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    display: block;
+    color: orange;
+}
+.btn{
+    display: block;
+    width: 150px;
+    margin: 30px;
+    border: 2px solid darkorange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    color: darkorange;
+}
+.btn:hover{
+    background-color: darkorange;
+    color: white;
+}
