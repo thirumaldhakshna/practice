@@ -3,7 +3,8 @@ Practice Samples for HTML, CSS, JS are lined up.
 
 <a href="https://thirumaldhakshna.github.io/practice/flipcard">1. Flip card</a> <br>
 <a href="https://thirumaldhakshna.github.io/practice/profilecard">2. Profile card</a> <br>
-<a href="https://thirumaldhakshna.github.io/practice/sayhelloform">3. Say Hello Form</a>
+<a href="https://thirumaldhakshna.github.io/practice/sayhelloform">3. Say Hello Form</a> <br>
+<a href="https://thirumaldhakshna.github.io/practice/responsivecard">4. Responsive card</a>
 
 <span class="icons">
                         Follow now
