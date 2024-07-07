@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap');
+:root{
+    --image1 : url('https://onedrive.live.com/embed?resid=5D67718CCCF55D05%21742&authkey=%21AHJuaM51Sgc4AnM&width=5999&height=3375');
+    --image2 : url('https://onedrive.live.com/embed?resid=5D67718CCCF55D05%21743&authkey=%21ACqu0nKZeGnkcWo&width=8064&height=4536');
+    --image3 : url('https://onedrive.live.com/embed?resid=5D67718CCCF55D05%21741&authkey=%21AK2vmztSxkmiwjw&width=5785&height=3254');
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100vb;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.container{
+    margin: 5% 20%;
+    background-image: var(--image1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px 2px black;
+    padding: 20px;
+    position: relative;
+    border-image: fill 0 linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, .2));
+}
+.child{
+    width: 80%;
+    height: 200px;
+    margin: 0 10%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    background-color: rgb(238, 238, 238, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img{
+    width: 75%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.des{
+    width: 50%;
+    margin: 10px 20px;
+}
+.pre, .next{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 237, 237, 0.2);
+    color: white;
+    font-weight: bold;
+    height: 40px; width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pre{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.next:hover, .pre:hover{
+    background-color: rgb(237, 237, 237, 0.8);
+    text-shadow: 1px 1px 5px black;
+}
+.dot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.section{
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        margin: 0 5%;
+    }
+    .pre, .next{
+        background-color: #fff;
+        border: 1px solid lightslategray;
+        color: black;
+        border-radius: 0;
+    }
+    .pre:hover, .next:hover{
+        background-color:darkorange;
+        color: white;
+    }
+    .pre{
+        top: -30px;
+        left: 10px;
+    }
+    .next{
+        top: -30px;
+        left: 50px;
+    }
+    .child{
+        width: 90%;
+        margin-inline: 3%;
+    }
+    .img{
+        width: 60%;
+    }
+}
