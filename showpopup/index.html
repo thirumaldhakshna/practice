@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Hello Gyes!</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem excepturi ratione esse recusandae, dolorem hic qui porro facilis tempore id fugit harum vitae incidunt a tenetur omnis quo commodi sed iste accusamus aliquid explicabo. Suscipit minus modi eligendi, voluptas exercitationem laudantium! Voluptatibus sequi voluptate magni, sed dolor quam quas soluta?
+        </p>
+        <a href="#" onclick="openWindow()">More details...</a>
+    </div>
+    <div class="popup">
+        <p>
+            Follow our website page and social media right away to know such information.
+        </p>
+        <div class="btn">
+            <a href="#" class="btn-1" target="_blank">
+                <i class="bi bi-instagram"></i>&nbsp;
+                <i class="bi bi-facebook"></i>&nbsp;
+                <i class="bi bi-twitter"></i>&nbsp;
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" class="btn-2" 
+            onclick="closeWindow()">Follow later</a>
+        </div>
+        <span onclick="closeWindow()">
+            <i class="bi bi-x-lg"></i>
+        </span>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
